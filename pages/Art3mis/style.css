@@ -11,7 +11,19 @@
     padding: 11px 0 9px;
 
 }
-
+@media (max-width: 768px) {
+    .navbar-container{
+        display: none;
+    }
+    .header-list-elem li:nth-child(1),
+    .header-list-elem li:nth-child(2),
+    .header-list-elem li:nth-child(3),
+    .header-list-elem li:nth-child(4),
+    
+    .header-list-elem li:nth-child(7) {
+      display: none;
+    }
+}
 .wiz-logo {
     margin: 0 auto;
 }
@@ -41,14 +53,14 @@
 
 }
 
-.search-field {
+/* .search-field {
     background: #353434;
     color: white;
-}
+} */
 
 .search-icon {
     position: absolute;
-    margin: 2px 0px 0px 193px;
+    margin: 2px 0px 0px 155px;
 }
 
 .button1 {
@@ -137,6 +149,19 @@
     overflow: hidden;
     box-shadow: inset 0px 0px 50px rgb(0, 0, 1);
 }
+@media (max-width: 768px) {
+    .second-container {
+        width: 100%;
+        height: 150%;
+        background-image: url(images/hp-f6-harry-at-slug-club-homepage-hero.jpg);
+        background-repeat: no-repeat;
+        /* background-position: center center; */
+        background-size: max(1600px, 100vw);
+        overflow: hidden;
+        box-shadow: inset 0px 0px 50px rgb(0, 0, 1);
+    }
+}
+
 .second-header-text{
     /* font-family: Bluu Next,ヒラギノ角ゴ Pro W3,Hiragino Kaku Gothic Pro,Osaka,メイリオ,Meiryo,ＭＳ Ｐゴシック,MS PGothic,serif; */
     display: flex;
